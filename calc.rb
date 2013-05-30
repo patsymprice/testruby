@@ -18,20 +18,21 @@ def get_num
    puts "What is your number?"
    num = gets.chomp.to_f
    return num
-end
+  end
+
 
  def add(array)
-   sum = array[0] + array[1]
+   sum = (array[0] + array[1])
    puts "Adding #{array[0]} and #{array[1]} equals #{sum}"
  end
 
 def subtract(array)
-   diff = array[0] - array[1]
+   diff = (array[0] - array[1])
    puts "Subtracting #{array[0]} and #{array[1]} equals #{diff}"
 end
 
 def multiply(array)
-   mult = array[0] * array[1]
+   mult = (array[0] * array[1])
    puts "Multplying #{array[0]} and #{array[1]} equals #{mult}"
  end
 
@@ -39,18 +40,18 @@ def multiply(array)
    if array[0] == 0
       puts "No dividing by zero!.. exiting..."
    else
-     div_num = array[0]/array[1]
+     div_num = (array[0]/array[1]).round(2)
      puts "Dividing #{array[0]} with #{array[1]} equals #{div_num}"
    end
  end
 
  def exponent(array)
-   exp = array[0] ** array[1]
+   exp = (array[0] ** array[1]).round(2)
    puts "Raising #{array[0]} to the #{array[1]} power equals #{exp}"
  end
 
  def square_rt(num)
-   square = Math.sqrt(num)
+   square = (Math.sqrt(num)).round(2)
    puts "Squaring  #{num} equals #{square}"
  end
 
