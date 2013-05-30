@@ -2,6 +2,10 @@
 # 
 #  need a calculator function that can be called again .. need more dry
 
+#def is_numeric?(i)
+#i.to_i.to_s == i || i.to_f.to_s == i
+#end
+
 
 def get_nums
    puts "Thank you, now we need two numbers from you."
@@ -17,7 +21,10 @@ def get_num
    puts "Thank you, now we need a number from you."
    puts "What is your number?"
    num = gets.chomp.to_f
-   return num
+  # if is_numeric(num)
+  #  return num
+   else
+   end
   end
 
 
